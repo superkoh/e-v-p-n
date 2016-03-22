@@ -48,8 +48,7 @@ try {
 
     }
 } catch (Exception $e) {
-    $res['ok'] = -1;
-    $res['msg'] = $e->getMessage();
+    print_r($e);die;
 }
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($res, JSON_UNESCAPED_UNICODE);
