@@ -46,33 +46,10 @@ try {
         $res['obj'] = $obj;
     } else {
         $password = md5($userKey);
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_URL, 'http://localhost:8022/mng-new.php');
-
-        $postData = [
-            'authType' => 'userAuth',
-            'username' => $userKey,
-            'password' => $password,
-            'passwordType' => 'User-Password',
-            'submit' => 'Apply'
-        ];
-        curl_setopt($ch, CURLOPT_POSTFIELDS,
-            http_build_query($postData));
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            "Content-Type: application/x-www-form-urlencoded"
+        $db->batchExecute([
+            ['insert into userinfo (username) values (?)', 's', $userKey],
+            ['insert into radcheck (`username`,`attribute`,`op`,`value`) values (?,?,?,?)', 'ssss', $userKey, 'User-Password', ':=', $password]
         ]);
-        $server_output = curl_exec ($ch);
-        var_dump($server_output);
-        if ($server_output === false) {
-            $msg = curl_error($ch);
-            curl_close($ch);
-            throw new Exception($msg);
-        }
-        die;
         $res['ok'] = 0;
         $res['obj'] = [
             'username' => $userKey,
