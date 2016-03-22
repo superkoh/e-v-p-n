@@ -28,10 +28,10 @@
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.34931508">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
               <folding>
-                <marker date="1458636648000" expanded="true" signature="869:891" placeholder="select * fro... userinfo" />
-                <marker date="1458636648000" expanded="true" signature="976:1015" placeholder="select * fro... radcheck" />
+                <marker date="1458636738000" expanded="true" signature="893:915" placeholder="select * fro... userinfo" />
+                <marker date="1458636738000" expanded="true" signature="1000:1039" placeholder="select * fro... radcheck" />
               </folding>
             </state>
           </provider>
@@ -285,10 +285,10 @@
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34931508">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
-            <marker date="1458636648000" expanded="true" signature="869:891" placeholder="select * fro... userinfo" />
-            <marker date="1458636648000" expanded="true" signature="976:1015" placeholder="select * fro... radcheck" />
+            <marker date="1458636738000" expanded="true" signature="893:915" placeholder="select * fro... userinfo" />
+            <marker date="1458636738000" expanded="true" signature="1000:1039" placeholder="select * fro... radcheck" />
           </folding>
         </state>
       </provider>

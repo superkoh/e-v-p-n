@@ -34,6 +34,7 @@ try {
     ]);
 
     $userKey = $_GET['vd'];
+    var_dump($userKey);
     $user = $db->fetchOne('select * from userinfo');
     var_dump($user);die;
     if (isset($user)) {
