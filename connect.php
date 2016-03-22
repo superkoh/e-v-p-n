@@ -1,9 +1,9 @@
 <?php
+include './K_MySQLi.php';
 $res = [
     'ok' => -1
 ];
 try {
-    include './K_MySQLi.php';
     $db = new K_MySQLi([
         'host' => 'localhost',
         'username' => 'freeradius',
