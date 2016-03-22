@@ -9,8 +9,7 @@ try {
         'username' => 'freeradius',
         'password' => 'radius123',
         'port' => '3306',
-        'db' => 'radius',
-        ''
+        'db' => 'radius'
     ]);
 
     $userKey = $_GET['vd'];

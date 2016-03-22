@@ -27,11 +27,11 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.023006136">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.24300441">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
-                <marker date="1458632632000" expanded="true" signature="319:358" placeholder="select * fro... userinfo" />
-                <marker date="1458632632000" expanded="true" signature="428:467" placeholder="select * fro... radcheck" />
+                <marker date="1458632740000" expanded="true" signature="307:346" placeholder="select * fro... userinfo" />
+                <marker date="1458632740000" expanded="true" signature="416:455" placeholder="select * fro... radcheck" />
               </folding>
             </state>
           </provider>
@@ -66,8 +66,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="116" />
-    <option name="y" value="28" />
+    <option name="x" value="105" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="800" />
   </component>
@@ -126,6 +126,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -138,7 +139,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="116" y="28" width="1440" height="800" extended-state="0" />
+    <frame x="105" y="23" width="1440" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -186,11 +187,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023006136">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.24300441">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
-            <marker date="1458632632000" expanded="true" signature="319:358" placeholder="select * fro... userinfo" />
-            <marker date="1458632632000" expanded="true" signature="428:467" placeholder="select * fro... radcheck" />
+            <marker date="1458632740000" expanded="true" signature="307:346" placeholder="select * fro... userinfo" />
+            <marker date="1458632740000" expanded="true" signature="416:455" placeholder="select * fro... radcheck" />
           </folding>
         </state>
       </provider>
