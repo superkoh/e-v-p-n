@@ -66,11 +66,13 @@ try {
             "Content-Type: application/x-www-form-urlencoded"
         ]);
         $server_output = curl_exec ($ch);
+        var_dump($server_output);
         if ($server_output === false) {
             $msg = curl_error($ch);
             curl_close($ch);
             throw new Exception($msg);
         }
+        die;
         $res['ok'] = 0;
         $res['obj'] = [
             'username' => $userKey,
