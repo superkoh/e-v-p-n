@@ -16,24 +16,20 @@ class K_MySQLi {
     public function __construct($config) {
         $this->_db = mysqli_init();
         if (!$this->_db) {
-            K::logger()->err('mysqli_init failed');
-            throw new K_Exception('',-1);
+            throw new Exception('mysqli_init failed', -1);
         }
 
         if (!$this->_db->options(MYSQLI_OPT_CONNECT_TIMEOUT, 1)) {
-            K::logger()->err('Setting MYSQLI_OPT_CONNECT_TIMEOUT failed');
-            throw new K_Exception('',-1);
+            throw new Exception('Setting MYSQLI_OPT_CONNECT_TIMEOUT failed', -1);
         }
 
         if (!$this->_db->real_connect($config['host'], $config['username'], $config['password'], $config['db'], $config['port'])) {
-            K::logger()->err('Connect Error (' . mysqli_connect_errno() . ') '
-                . mysqli_connect_error());
-            throw new K_Exception('',-1);
+            throw new Exception('Connect Error (' . mysqli_connect_errno() . ') '
+                . mysqli_connect_error(), -1);
         }
         // $this->_db = new mysqli($dbConfig['host'], $dbConfig['username'], $dbConfig['password'], $dbConfig['db'], $dbConfig['port']);
         if (mysqli_connect_errno()) {
-            K::logger()->err('connect to db failed: '.mysqli_connect_error().'('.mysqli_connect_errno().')');
-            throw new K_Exception('',-1);
+            throw new Exception('connect to db failed: '.mysqli_connect_error().'('.mysqli_connect_errno().')', -1);
             //return false;
         } else {
             $this->_db->set_charset('utf8mb4');
@@ -112,9 +108,7 @@ class K_MySQLi {
                 }
                 if($argsCount == 1 || call_user_func_array([$stmt, "bind_param"], $refArr)) {
                     $this->_executeCnt++;
-                    $startTime = microtime(true);
                     if($stmt->execute()) {
-                        K::logger()->log('[SQL:'.$query.'][DURATION:'.(microtime(true)-$startTime).']');
                         $result = $this->fetchRes($stmt);
                         if(count($result) > 0) {
                             $ret = $result[0];
@@ -126,7 +120,6 @@ class K_MySQLi {
                 $stmt->close();
             } catch (Exception $e) {
                 $stmt->close();
-                K::logger()->err($e);
             }
         }
         return $ret;
@@ -149,9 +142,7 @@ class K_MySQLi {
                 }
                 if($argsCount == 1 || call_user_func_array([$stmt, "bind_param"], $refArr)) {
                     $this->_executeCnt++;
-                    $startTime = microtime(true);
                     if($stmt->execute()) {
-                        K::logger()->log('[SQL:'.$query.'][DURATION:'.(microtime(true)-$startTime).']');
                         $ret = $this->fetchRes($stmt);
                     }else{
                         throw new Exception($stmt->error, $stmt->errno);
@@ -160,7 +151,6 @@ class K_MySQLi {
                 $stmt->close();
             } catch (Exception $e) {
                 $stmt->close();
-                K::logger()->err($e);
             }
         }
         return $ret;
@@ -184,9 +174,7 @@ class K_MySQLi {
                 }
                 if($argsCount == 1 || call_user_func_array([$stmt, "bind_param"], $refArr)) {
                     $this->_executeCnt++;
-                    $startTime = microtime(true);
                     if($stmt->execute()) {
-                        K::logger()->log('[SQL:'.$query.'][DURATION:'.(microtime(true)-$startTime).']');
                         $this->affected_rows = $stmt->affected_rows;
                         $ret = true;
                     }else {
@@ -196,10 +184,8 @@ class K_MySQLi {
                 $stmt->close();
             } catch (Exception $e) {
                 $stmt->close();
-                K::logger()->err($e);
             }
         }else{
-            K::logger()->err($this->_db->error);
         }
         return $ret;
     }
@@ -225,7 +211,6 @@ class K_MySQLi {
                         $this->_executeCnt++;
                         $startTime = microtime(true);
                         if(!$stmt->execute()) {
-                            K::logger()->log('[SQL:'.$sql[0].'][DURATION:'.(microtime(true)-$startTime).']');
                             throw new Exception($stmt->error, $stmt->errno);
                         }
                     } else {
@@ -235,7 +220,6 @@ class K_MySQLi {
                 } catch (Exception $e) {
                     $ret = false;
                     $stmt->close();
-                    K::logger()->err($e);
                 }
             } else {
                 $ret = false;
@@ -252,22 +236,19 @@ class K_MySQLi {
 
     public function startTransaction() {
         if(!$this->_db->autocommit(false)) {
-            K::logger()->err($this->_db->error);
-            throw new K_Exception('',-1);
+            throw new Exception($this->_db->error, -1);
         }
     }
 
     public function commit() {
         if(!$this->_db->commit()) {
-            K::logger()->err($this->_db->error);
-            throw new K_Exception("",-1);
+            throw new Exception($this->_db->error, -1);
         }
         $this->_db->autocommit(true);
     }
 
     public function rollback() {
         if(!$this->_db->rollback()) {
-            K::logger()->err($this->error);
         }
         $this->_db->autocommit(true);
     }
@@ -277,7 +258,6 @@ class K_MySQLi {
     }
 
     public function getAffectedRows() {
-        // K::logger()->err("Affected_ROWS: ".$this->affected_rows);
         return $this->affected_rows;
     }
 
