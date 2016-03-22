@@ -35,7 +35,7 @@ try {
 
     $userKey = $_GET['vd'];
     var_dump($userKey);
-    $user = $db->fetchOne('select * from userinfo');
+    $user = $db->fetchOne('select * from userinfo where username=?', 'koh');
     var_dump($user);die;
     if (isset($user)) {
         $check = $db->fetchOne('select * from radcheck where username=?', $userKey);
