@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22732071-dcb3-41c2-9f5e-cd0cd40e5ba2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/K_MySQLi.php" afterPath="$PROJECT_DIR$/K_MySQLi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
     </list>
     <ignored path="e-v-p-n.iws" />
@@ -27,11 +28,11 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34931508">
-              <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
+            <state vertical-scroll-proportion="0.48630136">
+              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
               <folding>
-                <marker date="1458636947000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-                <marker date="1458636947000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
+                <marker date="1458638411000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+                <marker date="1458638411000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
               </folding>
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="K_MySQLi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/K_MySQLi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54901963">
-              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+            <state vertical-scroll-proportion="-2.6470587">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +99,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/K_MySQLi.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/K_MySQLi.php" />
         <option value="$PROJECT_DIR$/connect.php" />
       </list>
     </option>
@@ -276,19 +277,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/K_MySQLi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54901963">
-          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/curl_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35159817">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35159817">
+          <caret line="2308" column="9" selection-start-line="2308" selection-start-column="9" selection-end-line="2308" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34931508">
-          <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.48630136">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
           <folding>
-            <marker date="1458636947000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-            <marker date="1458636947000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
+            <marker date="1458638411000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+            <marker date="1458638411000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
           </folding>
         </state>
       </provider>

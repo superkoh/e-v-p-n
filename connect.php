@@ -45,7 +45,38 @@ try {
         $res['ok'] = 0;
         $res['obj'] = $obj;
     } else {
+        $password = md5($userKey);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_URL, 'http://localhost:8022/mng-new.php');
 
+        $postData = [
+            'authType' => 'userAuth',
+            'username' => $userKey,
+            'password' => $password,
+            'passwordType' => 'User-Password',
+            'submit' => 'Apply'
+        ];
+        curl_setopt($ch, CURLOPT_POSTFIELDS,
+            http_build_query($postData));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Content-Type: application/x-www-form-urlencoded"
+        ]);
+        $server_output = curl_exec ($ch);
+        if ($server_output === false) {
+            $msg = curl_error($ch);
+            curl_close($ch);
+            throw new Exception($msg);
+        }
+        $res['ok'] = 0;
+        $res['obj'] = [
+            'username' => $userKey,
+            'password' => $password,
+            'secret' => 'superkoh'
+        ];;
     }
 } catch (Exception $e) {
     print_r($e);die;

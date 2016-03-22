@@ -209,7 +209,6 @@ class K_MySQLi {
                     }
                     if($argsCount == 1 || call_user_func_array([$stmt, "bind_param"], $refArr)) {
                         $this->_executeCnt++;
-                        $startTime = microtime(true);
                         if(!$stmt->execute()) {
                             throw new Exception($stmt->error, $stmt->errno);
                         }
