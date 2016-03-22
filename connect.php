@@ -47,8 +47,8 @@ try {
     } else {
         $password = md5($userKey);
         $db->batchExecute([
-            ['insert into userinfo (username) values (?)', 's', $userKey],
-            ['insert into userbillinfo (username) values (?)', 's', $userKey],
+            ['insert into userinfo (username,changeuserinfo,creationdate,creationby) values (?,?,?,?)', 'siss', $userKey,0,date('Y-m-d H:i:s'),'administrator'],
+            ['insert into userbillinfo (username,changeuserbillinfo,creationdate,creationby) values (?,?,?,?)', 'siss', $userKey,0,date('Y-m-d H:i:s'),'administrator'],
             ['insert into radcheck (`username`,`attribute`,`op`,`value`) values (?,?,?,?)', 'ssss', $userKey, 'User-Password', ':=', $password]
         ]);
         $res['ok'] = 0;

@@ -27,14 +27,14 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52755904">
-              <caret line="50" column="78" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.6692913">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
               <folding>
-                <marker date="1458639939000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-                <marker date="1458639939000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
-                <marker date="1458639939000" expanded="true" signature="1325:1367" placeholder="insert into userinfo... " />
-                <marker date="1458639939000" expanded="true" signature="1400:1446" placeholder="insert into userbillinfo... " />
-                <marker date="1458639939000" expanded="true" signature="1479:1554" placeholder="insert into radcheck... " />
+                <marker date="1458640279000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+                <marker date="1458640279000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
+                <marker date="1458640279000" expanded="true" signature="1325:1412" placeholder="insert into userinfo... " />
+                <marker date="1458640279000" expanded="true" signature="1486:1581" placeholder="insert into userbillinfo... " />
+                <marker date="1458640279000" expanded="true" signature="1655:1730" placeholder="insert into radcheck... " />
               </folding>
             </state>
           </provider>
@@ -293,14 +293,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52755904">
-          <caret line="50" column="78" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.6692913">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
           <folding>
-            <marker date="1458639939000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-            <marker date="1458639939000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
-            <marker date="1458639939000" expanded="true" signature="1325:1367" placeholder="insert into userinfo... " />
-            <marker date="1458639939000" expanded="true" signature="1400:1446" placeholder="insert into userbillinfo... " />
-            <marker date="1458639939000" expanded="true" signature="1479:1554" placeholder="insert into radcheck... " />
+            <marker date="1458640279000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+            <marker date="1458640279000" expanded="true" signature="983:1022" placeholder="select * fro... radcheck" />
+            <marker date="1458640279000" expanded="true" signature="1325:1412" placeholder="insert into userinfo... " />
+            <marker date="1458640279000" expanded="true" signature="1486:1581" placeholder="insert into userbillinfo... " />
+            <marker date="1458640279000" expanded="true" signature="1655:1730" placeholder="insert into radcheck... " />
           </folding>
         </state>
       </provider>
