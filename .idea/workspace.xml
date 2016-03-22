@@ -27,11 +27,11 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6917808">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.38356164">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding>
-                <marker date="1458636457000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-                <marker date="1458636457000" expanded="true" signature="978:1017" placeholder="select * fro... radcheck" />
+                <marker date="1458636509000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+                <marker date="1458636509000" expanded="true" signature="1003:1042" placeholder="select * fro... radcheck" />
               </folding>
             </state>
           </provider>
@@ -284,11 +284,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6917808">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.38356164">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
-            <marker date="1458636457000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
-            <marker date="1458636457000" expanded="true" signature="978:1017" placeholder="select * fro... radcheck" />
+            <marker date="1458636509000" expanded="true" signature="869:908" placeholder="select * fro... userinfo" />
+            <marker date="1458636509000" expanded="true" signature="1003:1042" placeholder="select * fro... radcheck" />
           </folding>
         </state>
       </provider>
