@@ -20,7 +20,7 @@ function kalec_exception_handler($e) {
 set_exception_handler('kalec_exception_handler');
 
 
-include './K_MySQLi.php';
+include __DIR__ . '/K_MySQLi.php';
 $res = [
     'ok' => -1
 ];
