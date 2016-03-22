@@ -26,7 +26,7 @@ $res = [
 ];
 try {
     $db = new K_MySQLi([
-        'host' => 'localhost',
+        'host' => '127.0.0.1',
         'username' => 'freeradius',
         'password' => 'radius123',
         'port' => '3306',
