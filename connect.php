@@ -1,4 +1,25 @@
 <?php
+function catchFatalError() {
+    $error = error_get_last();
+    if (empty($error)) return;
+    $ignore = E_WARNING | E_NOTICE | E_USER_WARNING | E_USER_NOTICE | E_STRICT | E_DEPRECATED | E_USER_DEPRECATED;
+    if (($error['type'] & $ignore) == 0) {
+        // handle the error - but DO NOT THROW ANY EXCEPTION HERE.
+        echo print_r($error, true);
+        die;
+    }
+}
+
+register_shutdown_function('catchFatalError');
+
+function kalec_exception_handler($e) {
+    echo print_r($e, true);
+    die;
+}
+
+set_exception_handler('kalec_exception_handler');
+
+
 include './K_MySQLi.php';
 $res = [
     'ok' => -1
