@@ -43,10 +43,11 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47244096">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.56692916">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
-                <marker date="1458750092000" expanded="true" signature="224:241" placeholder="select * fro... nas" />
+                <marker date="1458751253000" expanded="true" signature="323:340" placeholder="select * fro... nas" />
+                <marker date="1458751253000" expanded="true" signature="369:467" placeholder="select count... radacct" />
               </folding>
             </state>
           </provider>
@@ -302,10 +303,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47244096">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.56692916">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
-            <marker date="1458750092000" expanded="true" signature="224:241" placeholder="select * fro... nas" />
+            <marker date="1458751253000" expanded="true" signature="323:340" placeholder="select * fro... nas" />
+            <marker date="1458751253000" expanded="true" signature="369:467" placeholder="select count... radacct" />
           </folding>
         </state>
       </provider>

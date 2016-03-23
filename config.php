@@ -7,12 +7,22 @@ $db = new K_MySQLi([
     'port' => '3306',
     'db' => 'radius'
 ]);
+$nasMapping = [
+    '172.31.16.104' => '52.69.16.186',
+    '104.131.143.69' => '104.131.143.69'
+];
 $nasArr = $db->fetchAll('select * from nas');
+$cntArr = $db->fetchAll('select count(*) as cnt, nasipaddress from radacct where acctstoptime is null group by nasipaddress');
+$cntMap = [];
+foreach ($cntArr as $cnt) {
+    $cntMap[$nasMapping[$cnt['nasipaddress']]] = $cnt['cnt'];
+}
 $servers = [];
 foreach ($nasArr as $nas) {
     $servers[] = [
         'name' => $nas['shortname'],
-        'ip' => $nas['nasname']
+        'ip' => $nas['nasname'],
+        'cnt' => $cntMap[$nas['nasname']] ?? 0
     ];
 }
 $config = [
