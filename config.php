@@ -29,7 +29,6 @@ $config = [
     'ok'=> 0,
     'obj'=> [
         'servers'=> $servers,
-        'secret'=> 'superkoh',
         'ads' => [
             [
                 'asset' => 'https://img.117go.com/ws/f640/160323/rd4GrUZksRTGO97uts.jpg',
