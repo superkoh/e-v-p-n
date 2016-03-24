@@ -29,7 +29,13 @@ $config = [
     'ok'=> 0,
     'obj'=> [
         'servers'=> $servers,
-        'secret'=> 'superkoh'
+        'secret'=> 'superkoh',
+        'ads' => [
+            [
+                'asset' => 'https://img.117go.com/ws/f640/160323/rd4GrUZksRTGO97uts.jpg',
+                'link' => 'https://tao.117go.com'
+            ]
+        ]
     ]
 ];
 header('Content-Type: application/json; charset=utf-8');
