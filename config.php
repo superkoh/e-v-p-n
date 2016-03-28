@@ -35,7 +35,9 @@ $config = [
                 'asset' => 'https://img.117go.com/ws/f640/160323/rd4GrUZksRTGO97uts.jpg',
                 'link' => 'https://tao.117go.com'
             ]
-        ]
+        ],
+        'needUpdate' => false,
+        'updateInfo' => '请更新您的App以继续使用eVPN'
     ]
 ];
 header('Content-Type: application/json; charset=utf-8');
