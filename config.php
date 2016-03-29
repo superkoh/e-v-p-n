@@ -36,7 +36,7 @@ $config = [
 //                'link' => 'https://tao.117go.com'
 //            ]
         ],
-        'needUpdate' => false,
+        'needUpdate' => true,
         'updateInfo' => '请更新您的App以继续使用eVPN'
     ]
 ];
