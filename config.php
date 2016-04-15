@@ -16,7 +16,7 @@ $nasArr = $db->fetchAll('select * from nas');
 $cntArr = $db->fetchAll('select count(*) as cnt, nasipaddress from radacct where acctstoptime is null group by nasipaddress');
 $cntMap = [];
 foreach ($cntArr as $cnt) {
-    $cntMap[$nasMapping[$cnt['nasipaddress']]] = $cnt['cnt'] * 10;
+    $cntMap[$nasMapping[$cnt['nasipaddress']]] = $cnt['cnt'] * 100;
 }
 $servers = [];
 foreach ($nasArr as $nas) {
