@@ -33,7 +33,7 @@ $config = [
         'ads' => [
             [
                 'asset' => 'http://img.117go.com/timg/upload/160417/4HFVvSal2gDgE3Hp.jpg',
-                'link' => 'http://travelid.cn/'
+                'link' => 'http://travelid.cn/?refer=evpn'
             ]
         ],
         'needUpdate' => false,
