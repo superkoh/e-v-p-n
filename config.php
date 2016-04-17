@@ -31,10 +31,10 @@ $config = [
     'obj'=> [
         'servers'=> $servers,
         'ads' => [
-//            [
-//                'asset' => 'https://img.117go.com/ws/f640/160323/rd4GrUZksRTGO97uts.jpg',
-//                'link' => 'https://tao.117go.com'
-//            ]
+            [
+                'asset' => 'http://img.117go.com/timg/upload/160417/4HFVvSal2gDgE3Hp.jpg',
+                'link' => 'http://travelid.cn/'
+            ]
         ],
         'needUpdate' => false,
         'updateInfo' => '请更新您的App以继续使用eVPN'

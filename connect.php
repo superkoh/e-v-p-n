@@ -49,7 +49,8 @@ try {
         $db->batchExecute([
             ['insert into userinfo (username,changeuserinfo,creationdate,creationby) values (?,?,?,?)', 'siss', $userKey,0,date('Y-m-d H:i:s'),'administrator'],
             ['insert into userbillinfo (username,changeuserbillinfo,creationdate,creationby) values (?,?,?,?)', 'siss', $userKey,0,date('Y-m-d H:i:s'),'administrator'],
-            ['insert into radcheck (`username`,`attribute`,`op`,`value`) values (?,?,?,?)', 'ssss', $userKey, 'User-Password', ':=', $password]
+            ['insert into radcheck (`username`,`attribute`,`op`,`value`) values (?,?,?,?)', 'ssss', $userKey, 'User-Password', ':=', $password],
+            ['insert into radusergroup (`username`,`groupname`,`priority`) values (?,?,?)', 'ssi', $userKey, 'user', 0]
         ]);
         $res['ok'] = 0;
         $res['obj'] = [
