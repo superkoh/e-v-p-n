@@ -36,6 +36,14 @@ try {
     $userKey = $_GET['vd'];
     $user = $db->fetchOne('select * from userinfo where username=?', 's', $userKey);
     if (isset($user)) {
+        $used = $db->fetchOne('SELECT SUM(acctinputoctets+acctoutputoctets) AS usesum FROM radacct WHERE username=? AND date_format(acctstarttime, \'%Y-%m-%d\') >= date_format(now(),\'%Y-%m-01\') AND date_format(acctstoptime, \'%Y-%m-%d\') <= last_day(now())','s',$userKey);
+        if (isset($used) && $used['usesum'] > 5 * 1024 * 1024 * 1024) {
+            echo json_encode([
+                'ok' => -1,
+                'msg' => '您当月已使用流量超过5G,欢迎下月继续使用.如有任何问题,欢迎使用意见反馈与我们联系'
+            ], JSON_UNESCAPED_UNICODE);
+            die;
+        }
         $check = $db->fetchOne('select * from radcheck where username=?', 's', $userKey);
         $obj = [
             'username' => $userKey,
