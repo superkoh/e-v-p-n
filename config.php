@@ -32,8 +32,8 @@ $config = [
         'servers'=> $servers,
         'ads' => [
             [
-                'asset' => 'http://img.117go.com/timg/upload/160417/4HFVvSal2gDgE3Hp.jpg',
-                'link' => 'http://travelid.cn/?refer=evpn'
+                'asset' => 'http://img.117go.com/timg/f640/160426/4HOZBuRfvGkObOtK.jpg',
+                'link' => 'http://tao.117go.com/activity/release/149/?refer=tzlsfx'
             ]
         ],
         'needUpdate' => false,
