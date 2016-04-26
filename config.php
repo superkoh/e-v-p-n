@@ -33,7 +33,7 @@ $config = [
         'ads' => [
             [
                 'asset' => 'http://img.117go.com/timg/f640/160426/4HOZBuRfvGkObOtK.jpg',
-                'link' => 'http://tao.117go.com/activity/release/149/?refer=tzlsfx'
+                'link' => 'http://tao.117go.com/activity/release/149/?refer=evpn'
             ]
         ],
         'needUpdate' => false,
