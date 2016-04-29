@@ -10,7 +10,8 @@ $db = new K_MySQLi([
 $nasMapping = [
     '172.31.16.104' => '52.69.16.186',
     '104.131.143.69' => '104.131.143.69',
-    '172.31.28.135' => '52.196.18.70'
+    '172.31.28.135' => '52.196.18.70',
+    '107.170.225.101' => '107.170.225.101'
 ];
 $nasArr = $db->fetchAll('select * from nas');
 $cntArr = $db->fetchAll('select count(*) as cnt, nasipaddress from radacct where acctstoptime is null group by nasipaddress');
