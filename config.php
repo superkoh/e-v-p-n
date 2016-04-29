@@ -12,7 +12,8 @@ $nasMapping = [
     '104.131.143.69' => '104.131.143.69',
     '172.31.28.135' => '52.196.18.70',
     '107.170.225.101' => '107.170.225.101',
-    '159.203.255.105' => '159.203.255.105'
+    '159.203.255.105' => '159.203.255.105',
+    '45.32.60.225' => '45.32.60.225'
 ];
 $nasArr = $db->fetchAll('select * from nas');
 $cntArr = $db->fetchAll('select count(*) as cnt, nasipaddress from radacct where acctstoptime is null group by nasipaddress');
