@@ -15,13 +15,15 @@ $nasMapping = [
     '159.203.255.105' => '159.203.255.105',
     '45.32.60.225' => '45.32.60.225',
     '159.203.227.104' => '159.203.227.104',
-    '192.241.207.200' => '192.241.207.200'
+    '192.241.207.200' => '192.241.207.200',
+    '45.55.138.240' => '45.55.138.240',
+    '188.166.246.64' => '188.166.246.64'
 ];
 $nasArr = $db->fetchAll('select * from nas');
 $cntArr = $db->fetchAll('select count(*) as cnt, nasipaddress from radacct where acctstoptime is null group by nasipaddress');
 $cntMap = [];
 foreach ($cntArr as $cnt) {
-    $cntMap[$nasMapping[$cnt['nasipaddress']]] = $cnt['cnt'] * 10;
+    $cntMap[$nasMapping[$cnt['nasipaddress']]] = $cnt['cnt'] * 3;
 }
 $servers = [];
 foreach ($nasArr as $nas) {
