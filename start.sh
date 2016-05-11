@@ -20,7 +20,7 @@ conn ios
     right=%any
     rightauth=psk
     rightauth2=xauth-eap
-    rightsourceip=10.7.0.2/24
+    rightsourceip=10.7.0.2/21
     rightdns=8.8.8.8
     auto=add
 " >> /etc/ipsec.conf
