@@ -36,10 +36,10 @@ $config = [
     'obj'=> [
         'servers'=> $servers,
         'ads' => [
-            [
-                'asset' => 'http://img.117go.com/timg/f640/160429/4HRHvjGRbgEOYnDr.jpg',
-                'link' => 'http://tao.117go.com/activity/release/152?refer=evpn'
-            ]
+//            [
+//                'asset' => 'http://img.117go.com/timg/f640/160429/4HRHvjGRbgEOYnDr.jpg',
+//                'link' => 'http://tao.117go.com/activity/release/152?refer=evpn'
+//            ]
         ],
         'needUpdate' => false,
         'updateInfo' => '请更新您的App以继续使用eVPN'
