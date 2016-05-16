@@ -39,6 +39,6 @@ iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE
 
 sed -i "s/# accounting = no/accounting = yes/g" /etc/strongswan.d/charon/eap-radius.conf
 sed -i "0,/# secret =/ s/# secret =/secret = superkoh/" /etc/strongswan.d/charon/eap-radius.conf
-sed -i "s/# server =/server = 123.59.152.121/g" /etc/strongswan.d/charon/eap-radius.conf
+sed -i "s/# server =/server = 159.203.214.153/g" /etc/strongswan.d/charon/eap-radius.conf
 
 service strongswan restart
